@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child output" id="output">0</div>
+        <button class="child dark-gray" onclick="clearOutput()">AC</button>
+        <button class="child dark-gray" onclick="toggleSign()">+/-</button>
+        <button class="child dark-gray" onclick="appendValue('%')">%</button>
+        <button class="child orange" onclick="appendValue('/')">/</button>
+        <button class="child light-gray" onclick="appendValue('7')">7</button>
+        <button class="child light-gray" onclick="appendValue('8')">8</button>
+        <button class="child light-gray" onclick="appendValue('9')">9</button>
+        <button class="child orange" onclick="appendValue('*')">*</button>
+        <button class="child light-gray" onclick="appendValue('4')">4</button>
+        <button class="child light-gray" onclick="appendValue('5')">5</button>
+        <button class="child light-gray" onclick="appendValue('6')">6</button>
+        <button class="child orange" onclick="appendValue('-')">-</button>
+        <button class="child light-gray" onclick="appendValue('1')">1</button>
+        <button class="child light-gray" onclick="appendValue('2')">2</button>
+        <button class="child light-gray" onclick="appendValue('3')">3</button>
+        <button class="child orange" onclick="appendValue('+')">+</button>
+        <button class="child zero" onclick="appendValue('0')">0</button>
+        <button class="child light-gray" onclick="appendValue('.')">.</button>
+        <button class="child orange" onclick="calculate()">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
